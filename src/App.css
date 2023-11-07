@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Hind+Siliguri&family=Tiro+Bangla&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.frame {
+	background-color: #fefffe;
+	width: 435px;
+	height: 435px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	z-index: -22;
+	/* overflow: hidden; */
+}
+
+.frame .name {
+	text-align: right;
+	position: absolute;
+	font-size: 25px;
+	font-weight: 600;
+	bottom: 8px;
+	right: 8px;
+	font-family: 'Handlee', cursive;
+}
+.frame .msg {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	font-size: 20px;
+	font-weight: 600;
+	top: 5px;
+	padding: 0 20px;
+	font-family: 'Handlee', cursive;
+}
+
+.frame .msg p {
+	word-wrap: break-word;
+	background-color: #00000086;
+	color: #f9f9f9;
+	padding: 0 20px;
+	border-radius: 3px;
+}
+
+.user-image {
+	position: absolute;
+	object-fit: cover;
+	box-shadow: 0px 0px 31px 9px rgba(0, 0, 0, 0.2);
+}
+
+.user-image.frame1 {
+	top: 99px;
+	left: 100px;
+	border-radius: 50%;
+	width: 230px;
+	height: 230px;
+	z-index: -15;
+}
+.user-image.frame2 {
+	top: 114px;
+	left: 114px;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+.user-image.frame3 {
+	top: 125px;
+	left: 127px;
+	border-radius: 50%;
+	width: 190px;
+	height: 190px;
+}
+.user-image.frame4 {
+	top: 105px;
+	left: 99px;
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+}
+.user-image.frame5 {
+	top: 90px;
+	left: 102px;
+	border-radius: 50%;
+	width: 238px;
+	height: 237px;
+}
+.user-image.frame6 {
+	top: 112px;
+	left: 113px;
+	border-radius: 50%;
+	width: 205px;
+	height: 205px;
+}
+.user-image.frame7 {
+	top: 92px;
+	left: 97px;
+	border-radius: 50%;
+	width: 235px;
+	height: 235px;
+}
+.user-image.SQframe {
+	top: 108px;
+	left: 107px;
+	width: 215px;
+	height: 215px;
+}
+.user-image.SQframe2 {
+	top: 102px;
+	left: 103px;
+	width: 224px;
+	height: 226px;
+	z-index: -1;
+}
+.user-image.SQframe3 {
+	top: 102px;
+	left: 103px;
+	width: 224px;
+	height: 226px;
+	z-index: -2;
+}
+.user-image.SQframe4 {
+	top: 116px;
+	left: 101px;
+	width: 228px;
+	height: 198px;
+	z-index: -2;
+}
+
+img {
+	width: 100%;
+}
+
+.userName {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	font-family: 'Handlee', cursive;
+}
+
+.user-image.frame2 ~ .name,
+.user-image.frame5 ~ .name,
+.user-image.frame6 ~ .name,
+.user-image.frame4 ~ .name,
+.user-image.SQframe ~ .name {
+	color: #fff;
+}
+
+.App {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.App form {
+	background-color: #4d4d4d;
+	color: #fff;
+	padding: 20px 20px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+.App form .form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.App form .form-group label {
+	margin-top: 5px;
+}
+
+.App form .form-group input {
+	padding: 2px 5px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	margin: 2px 0;
+}
+.App form input[type='file'] {
+	margin-top: 15px;
+}
+
+.App form input[type='file'] {
+	color: transparent;
+}
+.App form input[type='file']::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.App form input[type='file']::before {
+	content: 'Select an image';
+	color: black;
+	display: inline-block;
+	background: #fff;
+	border-radius: 3px;
+	padding: 5px 8px;
+	outline: none;
+	white-space: nowrap;
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.25s;
+}
+.App form input[type='file']:hover::before {
+	background-color: #ededed;
+}
+
+.App button {
+	margin: 20px 15px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	color: #fff;
+	background-color: #1a1a1ad2;
+	cursor: pointer;
+	text-transform: capitalize;
+	transition: all 0.25s;
+	outline: none;
+	border: none;
+}
+button:hover {
+	background-color: #1a1a1a;
+}
